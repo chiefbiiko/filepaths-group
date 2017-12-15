@@ -5,8 +5,7 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
   - npm install --global npm@latest
-  - set PATH=%APPDATA%
-pm;%PATH%
+  - set PATH=%APPDATA%\npm;%PATH%
   - npm install
 matrix:
   fast_finish: true
